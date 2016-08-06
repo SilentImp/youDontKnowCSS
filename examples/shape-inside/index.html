@@ -1,0 +1,30 @@
+<html>
+<head>
+    <title>shape-outside</title>
+    <link rel="stylesheet" type="text/css" href="style.css" />
+    <script src="css-common.js"></script>
+    <script src="css-shape-inside.js"></script>
+    <script src="app.js"></script>
+</head>
+<body>
+    <div id="cont">
+        <div id="main">
+            <p>LG Electronics introduced a new smart TV powered by webOS 2.0 at CES 2015, which kicks off on January 6 in Las Vegas.</p>
+            <img src="webos.jpg">
+            The company acquired the source code, development infrastructure, and related documents of webOS from HP in February 2013. The company introduced a webOS-powered smart TV first time at CES 2014. LG has sold 5 million webOS Smart TVs globally since March. The latest offering will compete with arch-rival Samsung's own smart TV powered by Tizen, which will also be on display at the upcoming tradeshow.</p>
+        </div>
+    </div>
+    <menu class="controls">
+        <div>
+            <label for="_deviceRadius">DeviceRadius(%):</label>
+            <input type="range" min="0" max="50" value="50" id="deviceRadius" step="5"><span id="_deviceRadius">50</span>%
+        </div>
+        <div><label for="_screenWidth">ScreenWidth:</label>
+            <input type="range" min="100" max="600" value="600" id="screenWidth" step="10"><span id="_screenWidth">600</span>px
+        </div>
+        <div><label for="_screenHeight">ScreenHeight:</label>
+            <input type="range" min="100" max="670" value="400" id="screenHeight" step="10"><span id="_screenHeight">400</span>px
+        </div>
+    </menu>
+</body>
+</html>
