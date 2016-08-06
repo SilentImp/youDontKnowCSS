@@ -1,0 +1,20 @@
+doctype html
+html(lang="ru")
+  head
+    meta(charset="UTF-8")
+    meta(http-equiv="X-UA-Compatible", content="IE=Edge,chrome=1")
+    block title
+      title Слайды доклада
+    link(href="css/styles.css", rel="stylesheet")
+    script(data-main="js/presentation", src="js/requirejs/require.js")
+  body
+
+    form.go-to-page(action="/select/slide", method="post")
+      fieldset
+        input(type="text", maxlength="3", value="", placeholder="1")
+
+    section.progress
+      .value
+
+    section#slides.dark
+      block slides

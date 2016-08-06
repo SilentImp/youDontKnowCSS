@@ -1,0 +1,298 @@
+extends ./partials/layout.jade
+
+block title
+    title Вы не знаете CSS!
+
+block slides
+
+    article.cloud.center.ydncss
+        h1 
+            p.wrapper Вы 
+                br 
+                | не знаете CSS 
+
+    article.cloud.center.ydncss-2
+        h1 
+            p.wrapper когда вы в последний раз читали новые черновики?
+
+
+    article.cloud.center.ydncss-3
+        h1 
+            p.wrapper Месяц назад?
+
+    article.cloud.center.ydncss-4
+        h1 
+            p.wrapper Пол года?
+
+    article.cloud.center.ydncss-5
+        h1 
+            p.wrapper Год?
+
+    article.cloud.center.ydncss-6
+        h1 
+            p.wrapper Вы 
+                br 
+                | не знаете CSS 
+
+
+    article.cloud.center.ydncss-7
+        h1 
+            p.wrapper Сучки
+
+    article.cloud.center.where
+        h1 
+            p.wrapper А где  
+                br
+                | искать
+                | спеки?
+
+    article.center.qrcode.csswg
+        .wrapper
+            .half
+                h2 CSS Working Group
+            .half
+                img(src="images/csswg.svg", alt="QRCODE cо ссылкой на CSS Working Group Current Work")
+            p 
+                a(href="http://w3.org/Style/CSS/current-work", data-click=true) http://w3.org/Style/CSS/current-work
+
+    article.screen.screen--csswg
+
+    article.center.qrcode.csswg
+        .wrapper
+            .half
+                img(src="images/maturity.png", alt="Аббривеатуры")
+            .half
+                img(src="images/maturity.svg", alt="QRCODE cо ссылкой на описание жизненного цикла спецификации")
+            p 
+                a(href="https://www.w3.org/2005/10/Process-20051014/tr#maturity-levels", data-click=true) https://goo.gl/l6dYhc
+
+    article.cloud.center.contribute
+        h1 
+            p.wrapper А ведь могли бы и помочь!
+
+    article.center.qrcode.csswg-git
+        .wrapper
+            .half
+                h2 Репозиторий с черновиками рабочей группы CSS
+            .half
+                img(src="images/csswg-git.svg", alt="QRCODE cо ссылкой на репозиторий с черновиками")
+            p 
+                a(href="https://github.com/w3c/csswg-drafts", data-click=true) https://github.com/w3c/csswg-drafts
+
+    article.screen.screen--pr
+
+    article.center.qrcode.selenit
+        .wrapper
+            .half
+                img.avatar(src="images/selenit.jpg", alt="Фотографи Ильи Стрельцына")
+                h2 Илья Стрельцын 
+                    br
+                    | SelenIT
+            .half
+                img(src="images/selenit.svg", alt="QRCODE cо ссылкой на твиттер Ильи")
+            p 
+                a(href="https://twitter.com/@selenit2", data-click=true) https://twitter.com/@selenit2
+
+    article.screen.screen--why
+
+    article.cloud.center.knowlage
+        h1 
+            p.wrapper Знания 
+                br
+                | и имя это потенциальные деньги!
+
+    article.illustration.illustration--point
+
+    article.cloud.center.round
+        h1
+            p.wrapper CSS Round Display
+
+    article.blockquote
+        blockquote 
+            time Aug 4, 2016 
+            cite Hyojin Song
+            p I think CSS Round Display isn’t for the browser in smart watch, but we are considering the situation to make progress our standard activity.
+            p In the webOS-based smart watches most applications are developed using html/css/js, so we need to extend existing CSS specification.
+
+    article.blockquote
+        blockquote 
+            time Aug 4, 2016 
+            cite Hyojin Song
+            p The major Web-based platforms are Tizen by Samsung and webOS by LG as well as Firefox OS by Mozilla you mentioned.
+
+    article.illustration.illustration--ffos
+
+    article.blockquote
+        blockquote 
+            time Dec 8, 2015 
+            cite Mozlando
+            p Farewell Firefox OS smartphones. Mozilla today announced an end to its smartphone experiment, and said that it would stop developing and selling Firefox OS smartphones. It will continue to experiment on how it might work on other connected devices and Internet of Things networks.
+
+    article.illustration.illustration--b2gos
+
+    article.illustration.illustration--nope
+
+    article.illustration.illustration--tizen
+    
+    article.illustration.illustration--gear2
+
+    article.illustration.illustration--gears2
+            
+    article.illustration.illustration--lgwebos
+
+    article.illustration.illustration--urban
+
+    article.screen.screen--stats
+
+    article.cloud.center.media
+        h1
+            p.wrapper Но как я узнаю, что круглый дисплей — круглый?
+
+    article.center.code-1
+        .wrapper
+            pre
+                code.css="<link media=\"screen and (device-radius: 0%)\" \n\trel=\"stylesheet\" \n\thref=\"rectangle.css\" />\n<link media=\"screen and (device-radius: 50%)\" \n\trel=\"stylesheet\" \n\thref=\"round.css\" />"
+
+    article.center.code-1
+        .wrapper
+            pre
+                code.css="@media screen and (device-radius: 0%) {\n\t\\* Прямоугольный дисплей *\\\n}\n@media screen and (device-radius: 50%) {\n\t\\* Круглый дисплей *\\\n}"
+
+    article.cloud.center.sure-1
+        h1
+            p.wrapper Не вижу такого в 
+                mark Media Queries Level 4
+                | !
+
+    article.cloud.center.media
+        h1
+            p.wrapper А как заставить текст обтекать границы экрана?
+
+
+    article.center.code-1
+        .wrapper
+            pre
+                code.css="body {\n\tshape-inside: display;\n}"
+
+    article.watches
+        code.example.example--left 
+            mark shape-inside: auto;
+        code.example.example--right 
+            mark shape-inside: display;
+
+        div.display.display--left «Я не хочу писать из-за денег. Я хочу, чтобы мне платили за то, что я пишу», — таков принцип де Линта. Нарушая сложившиеся каноны жанров, Чарльз де Линт создает новый жанр. Его произведения — это городские сказки, где в подчеркнуто урбанистическом мире, в вечно спешащем, разноголосом и многонациональном мегаполисе конца ХХ века разворачиваются удивительные и загадочные события. «В этом как раз вся суть, — говорит автор, — поставить мифологический архетип в современные, нарочито реальные обстоятельства. И наоборот — обыкновенного человека, желательно реалиста и материалиста, забросить в подчеркнуто мифологическую ситуацию». Сам писатель определяет своё творчество как «мифологическую фантазию», синтез реализма, мифа и народной сказки.
+        div.display.display--right
+            span.shape.shape--right
+            span.shape.shape--left
+            span «Я не хочу писать из-за денег. Я хочу, чтобы мне платили за то, что я пишу», — таков принцип де Линта. Нарушая сложившиеся каноны жанров, Чарльз де Линт создает новый жанр. Его произведения — это городские сказки, где в подчеркнуто урбанистическом мире, в вечно спешащем, разноголосом и многонациональном мегаполисе конца ХХ века разворачиваются удивительные и загадочные события. «В этом как раз вся суть, — говорит автор, — поставить мифологический архетип в современные, нарочито реальные обстоятельства. И наоборот — обыкновенного человека, желательно реалиста и материалиста, забросить в подчеркнуто мифологическую ситуацию». Сам писатель определяет своё творчество как «мифологическую фантазию», синтез реализма, мифа и народной сказки.
+
+    article.cloud.center.sure-2
+        h1
+            p.wrapper Есть в 
+                mark CSS Shapes Module Level 2
+                | , но нигде не работает!
+
+    article.cloud.center.media
+        h1
+            p.wrapper А что с рамкой? Которая border?
+
+    article.center.code-1
+        .wrapper
+            pre
+                code.css=".container {\n\tborder-boundary: display;\n}"
+
+    article.watches
+        code.example.example--left 
+            mark border-boundary: none;
+        code.example.example--right 
+            mark border-boundary: display;
+
+        div.display.display--left
+            div.htop
+                .exr.exr--top
+            div.hbottom
+                .exr.exr--bottom
+        div.display.display--right
+            div.htop
+                .exr.exr--top
+            div.hbottom
+                .exr.exr--bottom
+
+    article.cloud.center.sure-2
+        h1
+            p.wrapper В 
+                mark CSS Backgrounds and Borders Module Level 4
+                |  — ни слова
+
+    article.cloud.center.media
+        h1
+            p.wrapper А что с координатами? [0;0] не существует?
+
+    article.cloud.center.polar
+        h1
+            p.wrapper Используем полярную систему координат вместо декартовой!
+
+    article.screen.screen--polar
+
+    article.center.code-1
+        .wrapper
+            pre
+                code.css=".element {\n\tpolar-angle: …;\n\tpolar-distance: …;\n\tpolar-origin: …;\n\tpolar-anchor: …;\n}"
+
+    article.cloud.center.sure-2
+        h1
+            p.wrapper polar в
+                br 
+                mark CSS Positioned Layout Module Level 3
+                | ? — Нет, не слышали
+
+
+    article.blockquote
+        blockquote 
+            time Aug 4, 2016 
+            cite Hyojin Song
+            p The implementation has been under discussion in Crosswalk and Blink community, so it needs more time to use CSS Round Display API in browsers.
+
+    article.center.qrcode.round_link
+        .wrapper
+            .half
+                h2 CSS Round Display Level 1 Polyfill
+            .half
+                img(src="images/rdp.svg", alt="QRCODE cо ссылкой на CSS Round Display Level 1 Polyfill")
+            p 
+                a(href="https://github.com/anawhj/jRound", data-click=true) https://github.com/anawhj/jRound
+
+    article
+        .backer(data-click=true)
+        iframe.half(src="examples/weather/index.html")
+        iframe.half(src="examples/weather/index_rect.html")
+
+    article
+        .backer(data-click=true)
+        iframe.half(src="examples/facebook/circle.html")
+        iframe.half(src="examples/shape-inside/index.html")
+
+    article.center.qrcode.round_link
+        .wrapper
+            .half
+                h2 CSS Round Display Level 1
+            .half
+                img(src="images/point.svg", alt="QRCODE cо ссылкой на CSS Round Display Level 1")
+            p 
+                a(href="https://www.w3.org/TR/css-round-display-1/", data-click=true) http://goo.gl/DLo4ry
+
+
+    //- article.center.code-1
+    //-     .wrapper
+    //-         pre
+    //-             code.javascript="navigator.onLine\n// true | false"
+    //- article.contacts.center.qrcode
+    //-     .wrapper
+    //-         .about-speaker
+    //-             p.name Антон Немцев
+    //-             p.link http://silentimp.info/
+    //-             p.twitter @silentimp
+    //-             p.email thesilentimp@gmail.com
+    //-             p.skype skype: ravencry
+    //-         img.link(src="images/git.svg", alt="QRCODE cо ссылкой на доклад")
+    //-         p http://goo.gl/lTV0bL

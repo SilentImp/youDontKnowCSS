@@ -1,0 +1,158 @@
+/* Regular */
+@font-face {
+  font-family: 'Roboto Regular';
+  font-style: normal;
+  src: url('fonts/Roboto-Regular.ttf') format('truetype');
+}
+@font-face {
+  font-family: 'Roboto Light';
+  font-style: normal;
+  src: url('fonts/Roboto-Light.ttf') format('truetype');
+}
+@font-face {
+  font-family: 'Roboto Medium';
+  font-style: normal;
+  src: url('fonts/Roboto-Medium.ttf') format('truetype');
+}
+@font-face {
+  font-family: 'Roboto Bold';
+  font-style: normal;
+  src: url('fonts/Roboto-Bold.ttf') format('truetype');
+}
+
+/* condensed */
+@font-face {
+  font-family: 'RobotoCondensed Regular';
+  font-style: normal;
+  src: url('fonts/RobotoCondensed-Regular.ttf') format('truetype');
+}
+@font-face {
+  font-family: 'RobotoCondensed Bold';
+  font-style: normal;
+  src: url('fonts/RobotoCondensed-Bold.ttf') format('truetype');
+}
+body {
+  margin: 0;
+  padding: 0;
+  background: black;
+}
+#container {
+  width: 310px;
+  height: 310px;
+  border-boundary: display;
+  border: 5px solid rgba(60, 118, 158, 0.8);
+  background-image: url("img/partlyCloudy_bg.jpg");
+  overflow: hidden;
+}
+#current {
+  width: 270px;
+  height: 110px;
+  padding-top: 25px;
+  padding-left: 0px;
+}
+#city {
+  padding-left: 50px;
+  font-family:'Roboto Medium';
+  font-size: 40px;
+  color: white;
+}
+#date {
+  padding-top: 15px;
+  padding-left: 40px;
+  font-family:'RobotoCondensed Regular';
+  font-size: 20px;
+  color: #E6E6E6;
+}
+
+#temperature {
+  position : relative;
+  top: -120px;
+  left: 120px;
+  font-family:'Roboto Regular';
+  font-size: 17px;
+  color: #F3E2A9;
+}
+
+#minTemp {
+  position : relative;
+  top: 10px;
+  left: 40px;
+}
+#maxTemp {
+  position : relative;
+  top: -34px;
+  left: 100px;
+}
+.tempImage {
+  position : relative;
+  top: 0px;
+  left: 0px;
+  height : 40px;
+  width : 40px;
+}
+.tempValue {
+  position : relative;
+  top: -15px;
+  left: -18px;
+}
+#weatherImg {
+  position: absolute;
+  top: 45px;
+  left: 190px;
+  height : 80px;
+  width : 80px;
+}
+#info {
+  position: absolute;
+  font-family:'Roboto Light';
+  font-size: 17px;
+  width: 250px;
+  height: 150px;
+  top: 130px;
+  left: 35px;
+  background-color: white;
+  border-color: black;
+  border-style: solid;
+  border-width: 1px;
+}
+
+#info1 {
+  position: relative;
+  top: -20px;
+  left: 30px;
+}
+#info2 {
+  position: relative;
+  top: -85px;
+  left: 105px;
+}
+#info3 {
+  position: relative;
+  top: -150px;
+  left: 180px;
+}
+.weatherSvg {
+  position: relative;
+  top: 70px;
+  left: -45px;
+  height : 60px;
+  width : 60px;
+}
+.weatherValue {
+  position: relative;
+  top: 80px;
+  left: -95px;
+  height : 50px;
+  width : 50px;
+}
+#bottom {
+  position:relative;
+  width: 310px;
+  height: 20px;
+  top: 145px;
+}
+#page {
+  height : 10px;
+  width : 10px;
+  padding-left: 150px;
+}
