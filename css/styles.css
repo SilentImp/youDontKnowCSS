@@ -1470,6 +1470,10 @@ article.cloud.motion h1:after {
   opacity: 0.75;
   box-shadow: none;
 }
+.screen--motion-support {
+  background: #f2e8d5 url("../images/motion-support.png") 50% 100% no-repeat;
+  background-size: contain;
+}
 @-webkit-keyframes planefly {
   0% {
     motion-offset: 0;
