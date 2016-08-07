@@ -427,3 +427,189 @@ article.cloud.polar
     &:after
       transform rotate(0deg)
       transform-origin 10px -298px
+      
+article.cloud.motion
+  background-image url(../images/map.png) 
+  background-size cover
+  background-position 50% 50%
+  h1
+    width 400px 
+    height 400px
+    left 50px
+    bottom 40px
+    line-height 400px
+    mark 
+      color red
+      background none
+    .wrapper
+      font-size 42px
+      line-height 48px 
+      padding 20px
+    &:after
+      display none
+      transform rotate(0deg)
+      transform-origin 10px -298px
+      
+.example--motion
+  background url('../images/old-map.jpg') 50% 50% no-repeat
+  background-size cover 
+  
+  .label
+    width 50px
+    height 75px
+    line-height 75px
+    text-align center
+    color #000 
+    background-color #FFF
+    position absolute
+    font-size 36px
+    opacity 0.75
+    
+    &:after
+      content ""
+      display block
+      position absolute
+      font-size 0
+      line-height 0
+      overflow hidden
+      height 0
+      width 0
+      border-style solid
+       
+    &--1
+      left 275px
+      top 40px
+      &:after
+        border-width 10px 10px 0
+        border-color #fff transparent transparent
+        top 100%
+        left 50%
+        margin-left -10px 
+        
+    &--2
+      left 975px
+      top 440px
+      &:after
+        border-width 10px 10px 0
+        border-color #fff transparent transparent
+        top 100%
+        left 50%
+        margin-left -10px 
+        
+    &--3
+      left 415px
+      top 440px
+      &:after
+        border-width 0 10px 10px
+        border-color transparent transparent #fff
+        bottom 100%
+        left 50%
+        margin-left -10px 
+        
+    &--4
+      left 875px
+      top 140px
+      &:after
+        border-width 0 10px 10px
+        border-color transparent transparent #fff
+        bottom 100%
+        left 50%
+        margin-left -10px 
+        
+      
+  
+  .sqr
+    width 20px 
+    height 20px
+    background #FFF
+    position absolute
+    border-radius 100%
+    &--1
+      left 990px
+      top 240px
+    &--2 
+      left 460px
+      top 50px
+
+  .point
+    width 40px
+    height 40px
+    border-radius 100%
+    position absolute
+    box-shadow inset 0 0 0 4px #fff
+    &--1
+      left 280px
+      top 130px
+    &--2
+      left 980px
+      top 530px
+    &--3
+      left 420px
+      top 380px
+    &--4
+      left 880px
+      top 80px
+      
+  .plane
+    width 100px
+    height 100px
+    box-shadow inset 0 0 0 4px #f00
+    position absolute
+    transform rotate(90deg)
+    // motion-path path('M 300,200 L 900,100 L 1000,650 z')
+    // motion-path path('M 300,150 Q 900,100 1000,650 z')
+    // motion-path path('M 1000,550')
+    // motion-path path('M 440, 400')
+    // motion-path path('M 900, 100')
+    motion-path path('M 300,150 Q 1000,250 1000,550 L 440,400 Q 470,60 900,100 z')
+    // motion-offset 50%
+  
+  &-step-1
+    .plane
+      motion-offset 50%
+
+  &-step-2
+    .plane
+      animation planefly 10s infinite linear
+      background url('../images/plane.png') 50% 50% no-repeat
+      background-size contain
+
+
+  &-step-3
+    .plane
+      animation planefly 10s infinite linear
+      motion-rotation 90deg
+      background url('../images/plane.png') 50% 50% no-repeat
+      background-size contain
+      
+  &-step-4
+    .plane
+      animation planefly 10s infinite linear
+      motion-rotation reverse
+      background url('../images/plane.png') 50% 50% no-repeat
+      background-size contain
+
+  &-step-5
+    .plane
+      animation planefly 10s infinite linear
+      box-shadow none
+      background url('../images/plane.png') 50% 50% no-repeat
+      background-size contain
+      z-index 200
+      motion-path none
+      motion path('M 300,150 Q 1000,250 1000,550 L 440,400 Q 470,60 900,100 z') 0 auto;
+    .point 
+      background-color #c00 
+      opacity .75 
+      box-shadow none
+    
+    
+
+@keyframes planefly {
+  0% { 
+    motion-offset: 0;
+  }
+  100% { 
+    motion-offset: 100%;
+  }
+}

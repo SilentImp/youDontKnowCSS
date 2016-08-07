@@ -34,10 +34,9 @@ block slides
                 br 
                 | не знаете CSS 
 
-
-    article.cloud.center.ydncss-7
-        h1 
-            p.wrapper Сучки
+    //- article.cloud.center.ydncss-7
+    //-     h1 
+    //-         p.wrapper Сучки
 
     article.cloud.center.where
         h1 
@@ -281,18 +280,154 @@ block slides
             p 
                 a(href="https://www.w3.org/TR/css-round-display-1/", data-click=true) http://goo.gl/DLo4ry
 
+    article.cloud.motion
+        h1
+            p.wrapper Motion Path Module Level 1
 
-    //- article.center.code-1
-    //-     .wrapper
-    //-         pre
-    //-             code.javascript="navigator.onLine\n// true | false"
-    //- article.contacts.center.qrcode
-    //-     .wrapper
-    //-         .about-speaker
-    //-             p.name Антон Немцев
-    //-             p.link http://silentimp.info/
-    //-             p.twitter @silentimp
-    //-             p.email thesilentimp@gmail.com
-    //-             p.skype skype: ravencry
-    //-         img.link(src="images/git.svg", alt="QRCODE cо ссылкой на доклад")
-    //-         p http://goo.gl/lTV0bL
+    article.center.code-1
+        .wrapper
+            pre
+                code.css=".plane {\n\tmotion-path: path('M 300,150 \n\t\tQ 900,100 1000,550 \n\t\tL 440,400 \n\t\tQ 470,60 900,100 \n\t\tz');\n}"
+
+    article.example.example--motion
+        .plane
+        .point.point--1
+        .point.point--2
+        .point.point--3
+        .point.point--4
+        .sqr.sqr--1
+        .sqr.sqr--2
+        .label.label--1 1
+        .label.label--2 2
+        .label.label--3 3
+        .label.label--4 4
+        svg(width="1200", height="675")
+            <path stroke="white" stroke-dasharray="20, 30" stroke-width="5" fill="none" d="M 300,150 Q 1000,250 1000,550 L 440,400 Q 470,60 900,100 z"/>
+            <path stroke="white" stroke-width="3" d="M 300,150 L 1000,250" />
+            <path stroke="white" stroke-width="3" d="M 440,400 L 470,60" />
+            
+    article.center.code-1
+        .wrapper
+            pre
+                code.css=".plane {\n\tmotion-offset: 50%;\n}"
+
+    article.example.example--motion.example--motion-step-1
+        .plane
+        .point.point--1
+        .point.point--2
+        .point.point--3
+        .point.point--4
+        .sqr.sqr--1
+        .sqr.sqr--2
+        .label.label--1 1
+        .label.label--2 2
+        .label.label--3 3
+        .label.label--4 4
+        svg(width="1200", height="675")
+            <path stroke="white" stroke-dasharray="20, 30" stroke-width="5" fill="none" d="M 300,150 Q 1000,250 1000,550 L 440,400 Q 470,60 900,100 z"/>
+            <path stroke="white" stroke-width="3" d="M 300,150 L 1000,250" />
+            <path stroke="white" stroke-width="3" d="M 440,400 L 470,60" />
+          
+    article.center.code-2
+        .wrapper
+            pre
+                code.css=".plane {\n\tanimation: planefly 10s infinite linear;\n}\n@keyframes planefly {\n\t0% {\n\t\tmotion-offset: 0;\n\t}\n\t100% {\n\t\tmotion-offset: 100%;\n\t}\n}"
+
+    article.example.example--motion.example--motion-step-2
+        .plane
+        .point.point--1
+        .point.point--2
+        .point.point--3
+        .point.point--4
+        .sqr.sqr--1
+        .sqr.sqr--2
+        .label.label--1 1
+        .label.label--2 2
+        .label.label--3 3
+        .label.label--4 4
+        svg(width="1200", height="675")
+            <path stroke="white" stroke-dasharray="20, 30" stroke-width="5" fill="none" d="M 300,150 Q 1000,250 1000,550 L 440,400 Q 470,60 900,100 z"/>
+            <path stroke="white" stroke-width="3" d="M 300,150 L 1000,250" />
+            <path stroke="white" stroke-width="3" d="M 440,400 L 470,60" />  
+
+    article.center.code-2
+        .wrapper
+            pre
+                code.css=".plane {\n\tmotion-rotation: 90deg;\n}"
+
+    article.example.example--motion.example--motion-step-3
+        .plane
+        .point.point--1
+        .point.point--2
+        .point.point--3
+        .point.point--4
+        .sqr.sqr--1
+        .sqr.sqr--2
+        .label.label--1 1
+        .label.label--2 2
+        .label.label--3 3
+        .label.label--4 4
+        svg(width="1200", height="675")
+            <path stroke="white" stroke-dasharray="20, 30" stroke-width="5" fill="none" d="M 300,150 Q 1000,250 1000,550 L 440,400 Q 470,60 900,100 z"/>
+            <path stroke="white" stroke-width="3" d="M 300,150 L 1000,250" />
+            <path stroke="white" stroke-width="3" d="M 440,400 L 470,60" /> 
+
+    article.center.code-2
+        .wrapper
+            pre
+                code.css=".plane {\n\tmotion-rotation: reverse;\n}"
+
+    article.example.example--motion.example--motion-step-4
+        .plane
+        .point.point--1
+        .point.point--2
+        .point.point--3
+        .point.point--4
+        .sqr.sqr--1
+        .sqr.sqr--2
+        .label.label--1 1
+        .label.label--2 2
+        .label.label--3 3
+        .label.label--4 4
+        svg(width="1200", height="675")
+            <path stroke="white" stroke-dasharray="20, 30" stroke-width="5" fill="none" d="M 300,150 Q 1000,250 1000,550 L 440,400 Q 470,60 900,100 z"/>
+            <path stroke="white" stroke-width="3" d="M 300,150 L 1000,250" />
+            <path stroke="white" stroke-width="3" d="M 440,400 L 470,60" />  
+
+    article.center.code-1
+        .wrapper
+            pre
+                code.css=".plane {\n\tmotion: path('M 300,150 \n\t\tQ 900,100 1000,550 \n\t\tL 440,400 \n\t\tQ 470,60 900,100 \n\t\tz') o auto;\n}"
+
+    article.example.example--motion.example--motion-step-5
+        .plane
+        .point.point--1
+        .point.point--2
+        .point.point--3
+        .point.point--4
+
+
+
+    article.center.qrcode.round_link
+        .wrapper
+            .half
+                h2 Motion Path Module Level 1
+            .half
+                img(src="images/motion.svg", alt="QRCODE cо ссылкой на CSS Round Display Level 1")
+            p 
+                a(href="https://www.w3.org/TR/motion-1/", data-click=true) https://www.w3.org/TR/motion-1/
+
+
+    article.contacts.center.qrcode
+        .wrapper
+            .about-speaker.half
+                p.name Антон Немцев
+                p.link http://silentimp.info/
+                p.twitter @silentimp
+                p.email thesilentimp@gmail.com
+                p.skype skype: ravencry
+            .half
+                img(src="images/git.svg", alt="QRCODE cо ссылкой на доклад")
+            
+            p 
+                a(href="https://github.com/SilentImp/youDontKnowCSS", data-click=true) https://goo.gl/d8iCDT
