@@ -1472,7 +1472,7 @@ article.cloud.motion h1:after {
 }
 .screen--motion-support {
   background: #f2e8d5 url("../images/motion-support.png") 50% 100% no-repeat;
-  background-size: contain;
+  background-size: cover;
 }
 @-webkit-keyframes planefly {
   0% {
