@@ -30,11 +30,15 @@ block slides
 
     article.cloud.center.ydncss-6
         h1 
+            p.wrapper Что за черновики?!
+
+    article.cloud.center.ydncss-7
+        h1 
             p.wrapper Вы 
                 br 
                 | не знаете CSS 
 
-    //- article.cloud.center.ydncss-7
+    //- article.cloud.center.ydncss-8
     //-     h1 
     //-         p.wrapper Сучки
 
@@ -44,6 +48,17 @@ block slides
                 br
                 | искать
                 | спеки?
+
+    article.center.qrcode.csswg
+        .wrapper
+            .half
+                h2 CSS Working Group Editor Drafts
+            .half
+                img(src="images/csswged.svg", alt="QRCODE cо ссылкой на CSS Working Group Current Work")
+            p 
+                a(href="https://drafts.csswg.org/", data-click=true) http://drafts.csswg.org/
+
+    article.screen.screen--drafts
 
     article.center.qrcode.csswg
         .wrapper
@@ -416,6 +431,79 @@ block slides
                 img(src="images/motion.svg", alt="QRCODE cо ссылкой на CSS Round Display Level 1")
             p 
                 a(href="https://www.w3.org/TR/motion-1/", data-click=true) https://www.w3.org/TR/motion-1/
+
+
+    article.cloud.real
+        h1
+            p.wrapper Я — настоящий механник!
+
+    article.cloud.real
+        h1
+            p.wrapper А CSS это настоящий язык програм&shy;мирования!
+
+    article.cloud.real
+        h1
+            p.wrapper В нём есть переменные! Правда!
+
+    article.center.code-1
+        .wrapper
+            pre
+                code.css=":root {\n\t--title-color: #c00;\n\t--text-color: #666;\n}"
+
+    article.center.code-1
+        .wrapper
+            pre
+                code.css=".title {\n\tcolor: var(--title-color);\n}\n.text {\n\tcolor: var(--text-color);\n}"
+
+    article.example.example--var.title
+        .wrapper
+            h1.title Типографика
+            p.text Правила набора и вёрстки текста. Для 95% людей кажутся совершенно бесполезными, но на самом деле не менее важны, чем правила орфографии и пунктуации. Помимо основного назначения (красиво оформлять текст) знание типографики (как и других правил) выдаёт IQ индивида и поэтому помогает выигрывать Специальные Олимпиады. В определённых кругах это понятие неразрывно связано с именем Сами-знаете-кого.
+
+    article.screen.screen--var-support
+
+    article.center.qrcode.var
+        .wrapper
+            .half
+                h2 CSS Custom Properties for Cascading Variables Module Level 1
+            .half
+                img(src="images/var.svg", alt="QRCODE cо ссылкой на CSS Custom Properties for Cascading Variables Module Level 1")
+            p 
+                a(href="https://www.w3.org/TR/css-variables/", data-click=true) http://w3.org/TR/css-variables/
+
+    //- article.cloud.real
+    //-     h1
+    //-         p.wrapper И области видимости у стилей! Я не шучу!
+
+    //- article.center.code-1
+    //-     .wrapper
+    //-         pre
+    //-             code.css="@scope .element {\n\tspan {\n\t\tcolor: orange;\n\t}\n}"
+
+    //- article.center.code-1
+    //-     .wrapper
+    //-         pre
+    //-             code.css=":scope-context('.selector'){}"
+
+    //- article.center.code-1
+    //-     .wrapper
+    //-         pre
+    //-             code.css="::shadow{}\n:host{}\n:host('.selector'){}\n:host-context('.selector'){}"                
+
+    //- article.center.code-1
+    //-     .wrapper
+    //-         pre
+    //-             code.css=".selector::region {}\n.selector::page {}\n.selector::column(<AnB>) {}\n.selector::nth-fragment(<AnB>) {}\n.selector::first-line {}"
+
+
+    //- article.center.qrcode.round_link
+    //-     .wrapper
+    //-         .half
+    //-             h2 CSS Scoping Module Level 1
+    //-         .half
+    //-             img(src="images/scope.svg", alt="QRCODE cо ссылкой на CSS Scoping Module Level 1")
+    //-         p 
+    //-             a(href="https://www.w3.org/TR/css-scoping-1/", data-click=true) http://w3.org/TR/css-scoping-1/
 
 
     article.contacts.center.qrcode
