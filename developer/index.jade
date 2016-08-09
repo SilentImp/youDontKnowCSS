@@ -15,7 +15,6 @@ block slides
         h1 
             p.wrapper когда вы в последний раз читали новые черновики?
 
-
     article.cloud.center.ydncss-3
         h1 
             p.wrapper Месяц назад?
@@ -82,7 +81,6 @@ block slides
 
     article.screen.screen--webkit
 
-
     article.center.qrcode.round_link
         .wrapper
             .half
@@ -113,6 +111,17 @@ block slides
                 img(src="images/ie.svg", alt="QRCODE cо ссылкой на MS Edge Platform Status")
             p 
                 a(href="https://developer.microsoft.com/en-us/microsoft-edge/platform/status/", data-click=true) https://goo.gl/Rn9l8J
+
+    article.screen.screen--ff
+
+    article.center.qrcode.round_link
+        .wrapper
+            .half
+                h2 Firefox Platform Roadmap
+            .half
+                img(src="images/ffold.svg", alt="QRCODE cо ссылкой на Firefox Platform Roadmap")
+            p 
+                a(href="https://wiki.mozilla.org/Platform/Roadmap", data-click=true) https://goo.gl/0a35R
 
     article.screen.screen--webplatform
 
@@ -163,6 +172,202 @@ block slides
                 | и имя это потенциальные деньги!
 
     article.illustration.illustration--point
+
+
+    article.cloud.motion
+        h1
+            p.wrapper Motion Path Module Level 1
+
+    article.center.code-1
+        .wrapper
+            pre
+                code.css=".plane {\n\tmotion-path: path('M 300,150 \n\t\tQ 900,100 1000,550 \n\t\tL 440,400 \n\t\tQ 470,60 900,100 \n\t\tz');\n}"
+
+    article.example.example--motion
+        .plane
+        .point.point--1
+        .point.point--2
+        .point.point--3
+        .point.point--4
+        .sqr.sqr--1
+        .sqr.sqr--2
+        .label.label--1 1
+        .label.label--2 2
+        .label.label--3 3
+        .label.label--4 4
+        svg(width="1200", height="675")
+            <path stroke="white" stroke-dasharray="20, 30" stroke-width="5" fill="none" d="M 300,150 Q 1000,250 1000,550 L 440,400 Q 470,60 900,100 z"/>
+            <path stroke="white" stroke-width="3" d="M 300,150 L 1000,250" />
+            <path stroke="white" stroke-width="3" d="M 440,400 L 470,60" />
+            
+    article.center.code-1
+        .wrapper
+            pre
+                code.css=".plane {\n\tmotion-offset: 50%;\n}"
+
+    article.example.example--motion.example--motion-step-1
+        .plane
+        .point.point--1
+        .point.point--2
+        .point.point--3
+        .point.point--4
+        .sqr.sqr--1
+        .sqr.sqr--2
+        .label.label--1 1
+        .label.label--2 2
+        .label.label--3 3
+        .label.label--4 4
+        svg(width="1200", height="675")
+            <path stroke="white" stroke-dasharray="20, 30" stroke-width="5" fill="none" d="M 300,150 Q 1000,250 1000,550 L 440,400 Q 470,60 900,100 z"/>
+            <path stroke="white" stroke-width="3" d="M 300,150 L 1000,250" />
+            <path stroke="white" stroke-width="3" d="M 440,400 L 470,60" />
+          
+    article.center.code-2
+        .wrapper
+            pre
+                code.css=".plane {\n\tanimation: planefly 10s infinite linear;\n}\n@keyframes planefly {\n\t0% {\n\t\tmotion-offset: 0;\n\t}\n\t100% {\n\t\tmotion-offset: 100%;\n\t}\n}"
+
+    article.example.example--motion.example--motion-step-2
+        .plane
+        .point.point--1
+        .point.point--2
+        .point.point--3
+        .point.point--4
+        .sqr.sqr--1
+        .sqr.sqr--2
+        .label.label--1 1
+        .label.label--2 2
+        .label.label--3 3
+        .label.label--4 4
+        svg(width="1200", height="675")
+            <path stroke="white" stroke-dasharray="20, 30" stroke-width="5" fill="none" d="M 300,150 Q 1000,250 1000,550 L 440,400 Q 470,60 900,100 z"/>
+            <path stroke="white" stroke-width="3" d="M 300,150 L 1000,250" />
+            <path stroke="white" stroke-width="3" d="M 440,400 L 470,60" />  
+
+    article.center.code-2
+        .wrapper
+            pre
+                code.css=".plane {\n\tmotion-rotation: 90deg;\n}"
+
+    article.example.example--motion.example--motion-step-3
+        .plane
+        .point.point--1
+        .point.point--2
+        .point.point--3
+        .point.point--4
+        .sqr.sqr--1
+        .sqr.sqr--2
+        .label.label--1 1
+        .label.label--2 2
+        .label.label--3 3
+        .label.label--4 4
+        svg(width="1200", height="675")
+            <path stroke="white" stroke-dasharray="20, 30" stroke-width="5" fill="none" d="M 300,150 Q 1000,250 1000,550 L 440,400 Q 470,60 900,100 z"/>
+            <path stroke="white" stroke-width="3" d="M 300,150 L 1000,250" />
+            <path stroke="white" stroke-width="3" d="M 440,400 L 470,60" /> 
+
+    article.center.code-2
+        .wrapper
+            pre
+                code.css=".plane {\n\tmotion-rotation: reverse;\n}"
+
+    article.example.example--motion.example--motion-step-4
+        .plane
+        .point.point--1
+        .point.point--2
+        .point.point--3
+        .point.point--4
+        .sqr.sqr--1
+        .sqr.sqr--2
+        .label.label--1 1
+        .label.label--2 2
+        .label.label--3 3
+        .label.label--4 4
+        svg(width="1200", height="675")
+            <path stroke="white" stroke-dasharray="20, 30" stroke-width="5" fill="none" d="M 300,150 Q 1000,250 1000,550 L 440,400 Q 470,60 900,100 z"/>
+            <path stroke="white" stroke-width="3" d="M 300,150 L 1000,250" />
+            <path stroke="white" stroke-width="3" d="M 440,400 L 470,60" />  
+
+    article.center.code-1
+        .wrapper
+            pre
+                code.css=".plane {\n\tmotion: path('M 300,150 \n\t\tQ 900,100 1000,550 \n\t\tL 440,400 \n\t\tQ 470,60 900,100 \n\t\tz') o auto;\n}"
+
+    article.example.example--motion.example--motion-step-5
+        .plane
+        .point.point--1
+        .point.point--2
+        .point.point--3
+        .point.point--4
+
+    article.screen.screen--motion-support
+
+    article.center.qrcode.round_link
+        .wrapper
+            .half
+                h2 Motion Path Module Level 1
+            .half
+                img(src="images/motion.svg", alt="QRCODE cо ссылкой на CSS Round Display Level 1")
+            p 
+                a(href="https://www.w3.org/TR/motion-1/", data-click=true) https://www.w3.org/TR/motion-1/
+
+    article.center.code-1
+        .wrapper
+            pre
+                code.css=".img {\n\tobject-fit: cover;\n\tobject-position: 100% 50%;\n}"
+
+    article.center.middle
+        .wrapper
+            img(src="images/paddington.jpg", alt="Иллюстрация")
+
+    article.example.example--fit.center
+        .wrapper
+            .half
+                img.small(src="images/paddington.jpg", alt="Иллюстрация")
+                mark object-fit: fill;
+            .half
+                img.big(src="images/paddington.jpg", alt="Иллюстрация")
+                mark object-fit: cover;
+
+    article.screen.screen--support-fit
+
+    article.center.code-1
+        .wrapper
+            pre
+                code.css=".container {\n\tbackground-image: cross-fade(\n\t\turl(source-1.png), \n\t\turl(source-2.png), \n\t\t50%);\n}"
+
+    article.example.example--crossfade-source
+
+    article.example.example--crossfade
+
+    article.screen.screen--support-cross
+
+    article.center.qrcode.var
+        .wrapper
+            .half
+                h2 CSS Image Values and Replaced Content Module Level 3
+            .half
+                img(src="images/image.svg", alt="QRCODE cо ссылкой на CSS Image Values and Replaced Content Module Level 3")
+            p 
+                a(href="https://drafts.csswg.org/css-images-3/", data-click=true) https://drafts.csswg.org/css-images-3/
+
+    article.center.code-1
+        .wrapper
+            pre
+                code.css=".container {\n\tbackground: element(#id);\n}"
+
+    article.screen.screen--element-examples
+
+    article.screen.screen--support-element
+
+    article.center.qrcode.var
+        .wrapper
+            .half
+                h2 CSS Image Values and Replaced Content Module Level 4
+            .half
+                img(src="images/image4.svg", alt="QRCODE cо ссылкой на CSS Image Values and Replaced Content Module Level 3")
+            p 
+                a(href="https://drafts.csswg.org/css-images-4/", data-click=true) https://drafts.csswg.org/css-images-4/
 
     article.cloud.center.round
         h1
@@ -307,7 +512,6 @@ block slides
                 mark CSS Positioned Layout Module Level 3
                 | ? — Нет, не слышали
 
-
     article.blockquote
         blockquote 
             time Aug 4, 2016 
@@ -342,142 +546,160 @@ block slides
             p 
                 a(href="https://www.w3.org/TR/css-round-display-1/", data-click=true) http://goo.gl/DLo4ry
 
-    article.cloud.motion
+    article.cloud.center.snap
         h1
-            p.wrapper Motion Path Module Level 1
+            p.wrapper Привязка скрола
 
     article.center.code-1
         .wrapper
             pre
-                code.css=".plane {\n\tmotion-path: path('M 300,150 \n\t\tQ 900,100 1000,550 \n\t\tL 440,400 \n\t\tQ 470,60 900,100 \n\t\tz');\n}"
-
-    article.example.example--motion
-        .plane
-        .point.point--1
-        .point.point--2
-        .point.point--3
-        .point.point--4
-        .sqr.sqr--1
-        .sqr.sqr--2
-        .label.label--1 1
-        .label.label--2 2
-        .label.label--3 3
-        .label.label--4 4
-        svg(width="1200", height="675")
-            <path stroke="white" stroke-dasharray="20, 30" stroke-width="5" fill="none" d="M 300,150 Q 1000,250 1000,550 L 440,400 Q 470,60 900,100 z"/>
-            <path stroke="white" stroke-width="3" d="M 300,150 L 1000,250" />
-            <path stroke="white" stroke-width="3" d="M 440,400 L 470,60" />
-            
-    article.center.code-1
-        .wrapper
-            pre
-                code.css=".plane {\n\tmotion-offset: 50%;\n}"
-
-    article.example.example--motion.example--motion-step-1
-        .plane
-        .point.point--1
-        .point.point--2
-        .point.point--3
-        .point.point--4
-        .sqr.sqr--1
-        .sqr.sqr--2
-        .label.label--1 1
-        .label.label--2 2
-        .label.label--3 3
-        .label.label--4 4
-        svg(width="1200", height="675")
-            <path stroke="white" stroke-dasharray="20, 30" stroke-width="5" fill="none" d="M 300,150 Q 1000,250 1000,550 L 440,400 Q 470,60 900,100 z"/>
-            <path stroke="white" stroke-width="3" d="M 300,150 L 1000,250" />
-            <path stroke="white" stroke-width="3" d="M 440,400 L 470,60" />
-          
-    article.center.code-2
-        .wrapper
-            pre
-                code.css=".plane {\n\tanimation: planefly 10s infinite linear;\n}\n@keyframes planefly {\n\t0% {\n\t\tmotion-offset: 0;\n\t}\n\t100% {\n\t\tmotion-offset: 100%;\n\t}\n}"
-
-    article.example.example--motion.example--motion-step-2
-        .plane
-        .point.point--1
-        .point.point--2
-        .point.point--3
-        .point.point--4
-        .sqr.sqr--1
-        .sqr.sqr--2
-        .label.label--1 1
-        .label.label--2 2
-        .label.label--3 3
-        .label.label--4 4
-        svg(width="1200", height="675")
-            <path stroke="white" stroke-dasharray="20, 30" stroke-width="5" fill="none" d="M 300,150 Q 1000,250 1000,550 L 440,400 Q 470,60 900,100 z"/>
-            <path stroke="white" stroke-width="3" d="M 300,150 L 1000,250" />
-            <path stroke="white" stroke-width="3" d="M 440,400 L 470,60" />  
-
-    article.center.code-2
-        .wrapper
-            pre
-                code.css=".plane {\n\tmotion-rotation: 90deg;\n}"
-
-    article.example.example--motion.example--motion-step-3
-        .plane
-        .point.point--1
-        .point.point--2
-        .point.point--3
-        .point.point--4
-        .sqr.sqr--1
-        .sqr.sqr--2
-        .label.label--1 1
-        .label.label--2 2
-        .label.label--3 3
-        .label.label--4 4
-        svg(width="1200", height="675")
-            <path stroke="white" stroke-dasharray="20, 30" stroke-width="5" fill="none" d="M 300,150 Q 1000,250 1000,550 L 440,400 Q 470,60 900,100 z"/>
-            <path stroke="white" stroke-width="3" d="M 300,150 L 1000,250" />
-            <path stroke="white" stroke-width="3" d="M 440,400 L 470,60" /> 
-
-    article.center.code-2
-        .wrapper
-            pre
-                code.css=".plane {\n\tmotion-rotation: reverse;\n}"
-
-    article.example.example--motion.example--motion-step-4
-        .plane
-        .point.point--1
-        .point.point--2
-        .point.point--3
-        .point.point--4
-        .sqr.sqr--1
-        .sqr.sqr--2
-        .label.label--1 1
-        .label.label--2 2
-        .label.label--3 3
-        .label.label--4 4
-        svg(width="1200", height="675")
-            <path stroke="white" stroke-dasharray="20, 30" stroke-width="5" fill="none" d="M 300,150 Q 1000,250 1000,550 L 440,400 Q 470,60 900,100 z"/>
-            <path stroke="white" stroke-width="3" d="M 300,150 L 1000,250" />
-            <path stroke="white" stroke-width="3" d="M 440,400 L 470,60" />  
+                code.css=".container {\n\tscroll-snap-type: mandatory;\n\tscroll-snap-stop: always;\n\tscroll-snap-padding: 0;\n}\n.element {\n\tscroll-snap-margin: 0;\n\tscroll-snap-align: none start;\n}"
 
     article.center.code-1
         .wrapper
             pre
-                code.css=".plane {\n\tmotion: path('M 300,150 \n\t\tQ 900,100 1000,550 \n\t\tL 440,400 \n\t\tQ 470,60 900,100 \n\t\tz') o auto;\n}"
+                code.css=".container {\n\tscroll-snap-destination: 0 0;\n\tscroll-snap-points-x: repeat(100%);\n\tscroll-snap-points-y: repeat(20px);\n}\n.element {\n\tscroll-snap-coordinate: 50px 50px;\n}"
 
-    article.example.example--motion.example--motion-step-5
-        .plane
-        .point.point--1
-        .point.point--2
-        .point.point--3
-        .point.point--4
+    article.example.example--news
+        .wrapper
+            .half
+                ul.line
+                    li.item
+                        time(datetime="T17:04Z") 17:04
+                        | "Нафтогаз" пояснил покупку бронированного "мерседеса" Стокгольмским арбитражем
 
-    article.screen.screen--motion-support
+                    li.item
+                        time(datetime="T16:29Z") 16:29
+                        | "Манчестер Сити" и "Шальке" провели рекордный трансфер в истории немецкого футбола
+
+                    li.item
+                        time(datetime="T16:26Z") 16:26
+                        | Фестиваль ГОГОЛЬFEST состоится в Киеве 16-25 сентября
+
+                    li.item
+                        time(datetime="T16:02Z") 16:02
+                        | Власти Турции реформируют разведку после попытки переворота в стране
+
+                    li.item
+                        time(datetime="T15:44Z") 15:44
+                        | Савченко считает свой закон идеальным и предлагает переписать другие
+
+                    li.item
+                        time(datetime="T15:38Z") 15:38
+                        | Слова Трампа об Украине не просто предвыборные "ляпы" - CNN
+
+                    li.item
+                        time(datetime="T15:02Z") 15:02
+                        | Тайфун Нида в Китае выворачивал с корнем деревья и разрушал дома
+
+                    li.item
+                        time(datetime="T15:02Z") 15:02
+                        | Россия понесла крупнейшие потери за время войны в Сирии – The Times
+
+                    li.item
+                        time(datetime="T14:39Z") 14:39
+                        | В оккупированном Кировске неизвестные обстреляли машины боевиков – разведка
+
+                    li.item
+                        time(datetime="T14:39Z") 14:39
+                        | В оккупированном Кировске неизвестные обстреляли машины боевиков – разведка
+
+                    li.item
+                        time(datetime="T14:09Z") 14:09
+                        | Церемония открытия Олимпиады в Рио будет недорогой из-за кризиса в Бразилии
+
+                    li.item
+                        time(datetime="T13:57Z") 13:57
+                        | Каждый пятый украинец поддерживает легализацию оружия
+
+                    li.item
+                        time(datetime="T13:32Z") 13:32
+                        | Киев прекратил принимать мусор из Львова из-за ремонта на заводе "Энергия"
+
+                    li.item
+                        time(datetime="T13:30Z") 13:30
+                        | Трамп во главе США сделает развал НАТО легким заданием для Путина – The Atlantic
+
+                    li.item
+                        time(datetime="T13:05Z") 13:05
+                        | В зоне АТО за сутки ранены двое украинских военных
+
+            .half
+                ul.news
+                    li.item
+                        time(datetime="T17:04Z") 17:04
+                        | "Нафтогаз" пояснил покупку бронированного "мерседеса" Стокгольмским арбитражем
+
+                    li.item
+                        time(datetime="T16:29Z") 16:29
+                        | "Манчестер Сити" и "Шальке" провели рекордный трансфер в истории немецкого футбола
+
+                    li.item
+                        img.illustration(src="images/wear.jpg", alt="Иллюстрация")
+
+                    li.item
+                        time(datetime="T16:26Z") 16:26
+                        | Фестиваль ГОГОЛЬFEST состоится в Киеве 16-25 сентября
+
+                    li.item
+                        time(datetime="T16:02Z") 16:02
+                        | Власти Турции реформируют разведку после попытки переворота в стране
+
+                    li.item
+                        time(datetime="T15:44Z") 15:44
+                        | Савченко считает свой закон идеальным и предлагает переписать другие
+
+                    li.item
+                        time(datetime="T15:38Z") 15:38
+                        | Слова Трампа об Украине не просто предвыборные "ляпы" - CNN
+
+                    li.item
+                        time(datetime="T15:02Z") 15:02
+                        | Тайфун Нида в Китае выворачивал с корнем деревья и разрушал дома
+
+                    li.item
+                        time(datetime="T15:02Z") 15:02
+                        | Россия понесла крупнейшие потери за время войны в Сирии – The Times
+
+                    li.item
+                        time(datetime="T14:39Z") 14:39
+                        | В оккупированном Кировске неизвестные обстреляли машины боевиков – разведка
+
+                    li.item
+                        time(datetime="T14:39Z") 14:39
+                        | В оккупированном Кировске неизвестные обстреляли машины боевиков – разведка
+
+                    li.item
+                        time(datetime="T14:09Z") 14:09
+                        | Церемония открытия Олимпиады в Рио будет недорогой из-за кризиса в Бразилии
+
+                    li.item
+                        time(datetime="T13:57Z") 13:57
+                        | Каждый пятый украинец поддерживает легализацию оружия
+
+                    li.item
+                        time(datetime="T13:32Z") 13:32
+                        | Киев прекратил принимать мусор из Львова из-за ремонта на заводе "Энергия"
+
+                    li.item
+                        time(datetime="T13:30Z") 13:30
+                        | Трамп во главе США сделает развал НАТО легким заданием для Путина – The Atlantic
+
+                    li.item
+                        time(datetime="T13:05Z") 13:05
+                        | В зоне АТО за сутки ранены двое украинских военных
+
+
+    article.screen.screen--snap-support
 
     article.center.qrcode.round_link
         .wrapper
             .half
-                h2 Motion Path Module Level 1
+                h2 CSS Scroll Snap Module Level 1
             .half
-                img(src="images/motion.svg", alt="QRCODE cо ссылкой на CSS Round Display Level 1")
+                img(src="images/snap.svg", alt="QRCODE cо ссылкой на CSS Scroll Snap Module Level 1")
             p 
-                a(href="https://www.w3.org/TR/motion-1/", data-click=true) https://www.w3.org/TR/motion-1/
+                a(href="https://drafts.csswg.org/css-scroll-snap/", data-click=true) http://drafts.csswg.org/css-scroll-snap/
 
 
     article.cloud.real
@@ -518,40 +740,133 @@ block slides
             p 
                 a(href="https://www.w3.org/TR/css-variables/", data-click=true) http://w3.org/TR/css-variables/
 
-    //- article.cloud.real
-    //-     h1
-    //-         p.wrapper И области видимости у стилей! Я не шучу!
 
-    //- article.center.code-1
-    //-     .wrapper
-    //-         pre
-    //-             code.css="@scope .element {\n\tspan {\n\t\tcolor: orange;\n\t}\n}"
+    article.cloud.real
+        h1
+            p.wrapper В CSS будут кастомные селекторы
 
-    //- article.center.code-1
-    //-     .wrapper
-    //-         pre
-    //-             code.css=":scope-context('.selector'){}"
+    article.center.code-2
+        .wrapper
+            pre
+                code.css="@custom-selector :--heading h1, h2, h3, h4, h5, h6;\n:--heading {\n\t/* Стили заголовков */\n}"
 
-    //- article.center.code-1
-    //-     .wrapper
-    //-         pre
-    //-             code.css="::shadow{}\n:host{}\n:host('.selector'){}\n:host-context('.selector'){}"                
+    article.center.qrcode.var
+        .wrapper
+            .half
+                h2 CSS Extensions
+            .half
+                img(src="images/custom.svg", alt="QRCODE cо ссылкой на CSS Extensions")
+            p 
+                a(href="https://drafts.csswg.org/css-extensions/", data-click=true) http://drafts.csswg.org/css-extensions/
 
-    //- article.center.code-1
-    //-     .wrapper
-    //-         pre
-    //-             code.css=".selector::region {}\n.selector::page {}\n.selector::column(<AnB>) {}\n.selector::nth-fragment(<AnB>) {}\n.selector::first-line {}"
+    article.cloud.real
+        h1
+            p.wrapper Можно проверять поддержку свойств
 
+    article.center.code-1
+        .wrapper
+            pre
+                code.css="body {\n\tbackground: red;\n}\n@supports ( position: polar ) {\n\tbody {\n\t\tbackground: green;\n\t}\n}"
 
-    //- article.center.qrcode.round_link
-    //-     .wrapper
-    //-         .half
-    //-             h2 CSS Scoping Module Level 1
-    //-         .half
-    //-             img(src="images/scope.svg", alt="QRCODE cо ссылкой на CSS Scoping Module Level 1")
-    //-         p 
-    //-             a(href="https://www.w3.org/TR/css-scoping-1/", data-click=true) http://w3.org/TR/css-scoping-1/
+    article.example.example--support
+        .wrapper
+            .half.sticky
+                mark 
+                    span position: sticky;
+            .half.motion
+                mark 
+                    span motion-path: path('M 0,0');
 
+    article.screen.screen--support-support
+
+    article.center.qrcode.var
+        .wrapper
+            .half
+                h2 CSS Conditional Rules Module Level 3
+            .half
+                img(src="images/support.svg", alt="CSS Conditional Rules Module Level 3")
+            p 
+                a(href="https://drafts.csswg.org/css-conditional/#at-supports", data-click=true) https://goo.gl/HAUwrG
+
+    article.illusration.illusration--typo
+
+    article.center.code-1
+        .wrapper
+            pre
+                code.css="article {\n\thyphenate-character: \"~\";\n\thyphenate-limit-zone: 10%;\n\thyphenate-limit-chars: 3;\n\thyphenate-limit-lines: 3;\n\thyphenate-limit-last: always;\n}"
+
+    article.center.qrcode.var
+        .wrapper
+            .half
+                h2 CSS Text Module Level 4
+            .half
+                img(src="images/text.svg", alt="QRCODE cо ссылкой на CSS Text Module Level 4")
+            p 
+                a(href="https://drafts.csswg.org/css-text-4/", data-click=true) https://drafts.csswg.org/css-text-4/
+
+    article.center.code-1
+        .wrapper
+            pre
+                code.css="article {\n\torphans: 5;\n}"
+
+    article.example.example--orphan
+        .wrapper
+            .vhalf
+                p Use CSS generated content for decoration and non-vital information, but make sure it’s properly handled by screen readers, so that people with assistive technology are not distracted. Think “progressive enhancement” when deciding whether to use CSS generated content.
+                mark 
+                    span orphans: 2;
+
+            .vhalf
+                p Use CSS generated content for decoration and non-vital information, but make sure it’s properly handled by screen readers, so that people with assistive technology are not distracted. Think “progressive enhancement” when deciding whether to use CSS generated content.
+                mark 
+                    span orphans: 5;
+
+    article.screen.screen--orphans-support
+
+    article.center.qrcode.var
+        .wrapper
+            .half
+                h2 Cascading Style Sheets Level 2 Revision 1
+            .half
+                img(src="images/orphans.svg", alt="QRCODE cо ссылкой на Cascading Style Sheets Level 2 Revision 1")
+            p 
+                a(href="https://www.w3.org/TR/CSS2/page.html#propdef-orphans", data-click=true) https://goo.gl/GVxe6x
+
+    article.center.code-1
+        .wrapper
+            pre
+                code.css=".source {\n\tflow-into: content-flow;\n}\n.target-1 {\n\tflow-from: content-flow;\n}\n.target-2 {\n\tflow-from: content-flow;\n}"
+
+    article.screen.screen--region
+
+    article.screen.screen--regions-support
+
+    article.center.qrcode.var
+        .wrapper
+            .half
+                h2 CSS Regions Module Level 1
+            .half
+                img(src="images/regions.svg", alt="QRCODE cо ссылкой на CSS Regions Module Level 1")
+            p 
+                a(href="https://drafts.csswg.org/css-regions/", data-click=true) http://drafts.csswg.org/css-regions/
+
+    article.center.code-1
+        .wrapper
+            pre
+                code.css="aside {\n\twrap-flow: both;\n}"
+
+    article.screen.screen--exclusion
+
+    article.screen.screen--exclusion-support
+
+    article.center.qrcode.var
+        .wrapper
+            .half
+                h2 CSS Exclusions Module Level 1
+            .half
+                img(src="images/exclusion.svg", alt="QRCODE cо ссылкой на CSS Exclusions Module Level 1")
+            p 
+                a(href="https://drafts.csswg.org/css-exclusions/", data-click=true) http://drafts.csswg.org/css-exclusions/
 
     article.contacts.center.qrcode
         .wrapper

@@ -89,14 +89,14 @@ article.cloud.ydncss-6
   h1
     width 400px 
     height 400px
-    left 60%
+    right 60%
     top 160px
     line-height 400px
     .wrapper
       font-size 48px
       line-height 56px
     &:after
-      transform rotate(103deg)
+      transform rotate(-103deg)
       transform-origin 10px -198px
       
 article.cloud.ydncss-7
@@ -314,7 +314,7 @@ article.cloud.sure-1
     right 10px
     top 40px
     line-height 400px
-    mark 
+    mark
       color red
       background none
     .wrapper
@@ -687,7 +687,248 @@ article.center.qrcode.var
   
 .screen--chrome
   background-image url('../images/screen-chrome.png') 
+
+.screen--ff
+  background-image url('../images/screen-ff.png') 
   
 .screen--webplatform
   background-image url('../images/screen-webplatform.png') 
+  
+article.screen.screen--regions-support
+  background-image url('../images/regions-support.png') 
+  background-size cover
 
+article.screen.screen--support-support
+  background-image url('../images/support-support.png') 
+  background-size cover
+  
+.example.example--support
+  .wrapper
+    width 100%
+  .half
+    height 675px
+    position relative
+    text-align center
+    line-height 675px
+    background red
+    &:after
+      content "НЕТ"
+      color #d00
+      font-size 300px
+      position absolute
+      left 0
+      top 0
+      right 0
+      bottom 0
+      line-height 300px
+      z-index 98
+    
+    mark
+      display inline-block
+      vertical-align middle 
+      font-size 36px
+      line-height 64px
+      white-space nowrap
+      padding 5px 20px
+      background yellow
+      position relative
+      top 100px
+      z-index 100
+      
+@css {
+  @supports ( position: sticky ) {
+    article.example.example--support .half.sticky {
+      background: green;
+    }
+    article.example.example--support .half.sticky:after {
+      content: "ДА";
+      color: #060;
+    }
+  }
+
+  @supports ( motion-path: path('M 0,0') ) {
+    article.example.example--support .half.motion {
+      background: green;
+    }
+    article.example.example--support .half.motion:after {
+      content: "ДА";
+      color: #060;
+    }
+  }
+}
+
+article.screen.screen--exclusion
+  background-image url('../images/screen-exclusion.png') 
+  
+article.screen.screen--exclusion-support
+  background-image url('../images/exclusion-support.png') 
+  background-size cover
+  
+article.screen.screen--region
+  background-image url('../images/screen-region.png') 
+  
+
+article.screen.screen--snap-support
+  background-image url('../images/snap-support.png') 
+  background-size cover
+  
+article.cloud.snap
+  background-image url(../images/magnet.jpg) 
+  background-size cover
+  background-position 50% 50%
+  h1
+    width 400px 
+    height 400px
+    right 80px
+    top 20px
+    bottom 20px
+    line-height 400px
+    .wrapper
+      font-size 42px
+      line-height 48px 
+      padding 20px
+    &:after
+      display none
+      
+section#slides article.example.example--news
+  text-align center
+  line-height 675px
+  .wrapper .half ul
+    pointer-events all !important
+  time
+    margin 0 10px 0 0
+    color #d5d5d5 
+  ul
+    padding 0 40px 0 80px
+    margin 0
+    overflow auto 
+    display inline-block
+    vertical-align middle
+    width 100%
+    box-sizing border-box
+    height 420px
+    font-size 28px
+    line-height 42px
+    &.line
+      scroll-snap-type: mandatory; 
+      scroll-snap-points-y: repeat(42px);
+      
+    &.news
+      scroll-snap-type: mandatory; 
+      scroll-snap-stop: always;
+      .item
+        scroll-snap-coordinate: 0 0;
+        scroll-snap-stop: always;
+        .illustration
+          vertical-align top
+  li
+    margin 0
+    padding 0
+    
+article.example.example--crossfade
+  background-color #FFF 
+  background-image  url("../images/fat-2.png")
+  background-image -webkit-cross-fade(url("../images/fat-1.png"), url("../images/fat-2.png"), 50%)
+  background-size cover
+  background-position 50% 50%
+  background-repeat no-repeat
+  
+article.example.example--crossfade-source
+  background-image url("../images/cross.png") 
+  background-size cover
+  background-position 50% 50%
+  background-repeat no-repeat
+  
+.example.example--fit
+  mark
+    display inline-block
+    vertical-align middle 
+    font-size 36px
+    line-height 64px
+    white-space nowrap
+    padding 5px 20px
+    background yellow
+    position relative
+    top 500px
+    z-index 100
+  .wrapper
+    height 675px
+    width 100%
+  .half
+    position relative
+    height 675px
+    width 50%
+  img
+    display block
+    position absolute
+    z-index 1
+    top -2px
+    left 0
+    right 0
+    bottom 0 
+  .small
+    width 100% 
+    height 675px
+    max-width 100%
+    max-height 100%
+    object-fit fill
+    object-position 100% 50%
+  .big
+    width 100% 
+    height 675px
+    max-width 100%
+    max-height 100%
+    object-fit cover
+    object-position 100% 50%
+    
+article.screen.screen--support-fit
+  background #f2e8d5 url('../images/fit-support.png') 50% 100% no-repeat
+  background-size cover
+  
+article.screen.screen--support-cross
+  background #f2e8d5 url('../images/cross-support.png') 50% 100% no-repeat
+  background-size cover
+  
+article.screen.screen--support-element
+  background #f2e8d5 url('../images/element-support.png') 50% 100% no-repeat
+  background-size cover
+  
+article.screen.screen--element-examples
+  background #fff url('../images/screen-element.png') 50% 100% no-repeat
+  background-size contain
+  
+article.illusration.illusration--typo
+  background-image url('../images/typography.jpg')
+  
+article.example.example--orphan
+  mark
+    position absolute
+    left 50%
+    bottom 20px
+    margin auto
+    background none
+    font-size 36px
+    line-height 48px
+    span
+      padding 5px 20px
+      position relative
+      background yellow
+      margin-left -50%
+      display inline-block
+  .wrapper
+    padding 48px
+  .vhalf
+    height calc(675px/2 - 96px)
+    position relative
+    &:nth-child(2) p
+      orphans 5
+  p 
+    word-spacing .1em
+    margin 0
+    column-count 2
+    font-size 28px
+    line-height 36px
+
+article.screen.screen--orphans-support
+  background #f2e8d5 url('../images/orphans-support.png') 50% 100% no-repeat
+  background-size cover
