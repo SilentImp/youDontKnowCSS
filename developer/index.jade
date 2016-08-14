@@ -79,6 +79,10 @@ block slides
             p 
                 a(href="https://www.w3.org/2005/10/Process-20051014/tr#maturity-levels", data-click=true) https://goo.gl/l6dYhc
 
+    article.cloud.center.roadmap
+        h1 
+            p.wrapper Roadmap
+
     article.screen.screen--webkit
 
     article.center.qrcode.round_link
@@ -291,7 +295,7 @@ block slides
     article.center.code-1
         .wrapper
             pre
-                code.css=".plane {\n\tmotion: path('M 300,150 \n\t\tQ 900,100 1000,550 \n\t\tL 440,400 \n\t\tQ 470,60 900,100 \n\t\tz') o auto;\n}"
+                code.css=".plane {\n\tmotion: path('M 300,150 \n\t\tQ 900,100 1000,550 \n\t\tL 440,400 \n\t\tQ 470,60 900,100 \n\t\tz') 0 auto;\n}"
 
     article.example.example--motion.example--motion-step-5
         .plane
@@ -310,6 +314,10 @@ block slides
                 img(src="images/motion.svg", alt="QRCODE cо ссылкой на CSS Round Display Level 1")
             p 
                 a(href="https://www.w3.org/TR/motion-1/", data-click=true) https://www.w3.org/TR/motion-1/
+
+    article.cloud.center.images
+        h1 
+            p.wrapper Изображения
 
     article.center.code-1
         .wrapper
@@ -330,6 +338,16 @@ block slides
                 mark object-fit: cover;
 
     article.screen.screen--support-fit
+
+    article.center.qrcode.round_link
+        .wrapper
+            .half
+                h2 object-fit Polyfill
+            .half
+                img(src="images/fit.svg", alt="QRCODE cо ссылкой на object-fit Polyfill")
+            p 
+                a(href="https://github.com/bfred-it/object-fit-images/", data-click=true) https://goo.gl/igf2JE
+
 
     article.center.code-1
         .wrapper
@@ -772,7 +790,7 @@ block slides
         .wrapper
             .half.sticky
                 mark 
-                    span position: sticky;
+                    span stack-sizing: stretch-to-fit;
             .half.motion
                 mark 
                     span motion-path: path('M 0,0');
@@ -793,7 +811,7 @@ block slides
     article.center.code-1
         .wrapper
             pre
-                code.css="article {\n\thyphenate-character: \"~\";\n\thyphenate-limit-zone: 10%;\n\thyphenate-limit-chars: 3;\n\thyphenate-limit-lines: 3;\n\thyphenate-limit-last: always;\n}"
+                code.css="article {\n\thyphenate-character: \"~\";\n\thyphenate-limit-zone: 10%;\n\thyphenate-limit-chars: 5 2 2;\n\thyphenate-limit-lines: 3;\n\thyphenate-limit-last: always;\n}"
 
     article.center.qrcode.var
         .wrapper
@@ -869,6 +887,16 @@ block slides
                 img(src="images/exclusion.svg", alt="QRCODE cо ссылкой на CSS Exclusions Module Level 1")
             p 
                 a(href="https://drafts.csswg.org/css-exclusions/", data-click=true) http://drafts.csswg.org/css-exclusions/
+
+    article.cloud.center.ydncss-6
+        h1 
+            p.wrapper Читайте
+                br 
+                | черновики
+
+    article.cloud.center.ydncss-5
+        h1 
+            p.wrapper.style &#x2620;
 
     article.contacts.center.qrcode
         .wrapper

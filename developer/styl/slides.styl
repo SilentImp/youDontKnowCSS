@@ -66,6 +66,44 @@ article.cloud.ydncss-4
       transform rotate(-105deg)
       transform-origin 10px -198px
       
+article.cloud.roadmap
+  background-image url(../images/roadmap.jpg) 
+  background-size cover
+  background-position 50%
+  h1
+    width 400px 
+    height 400px
+    left 50%
+    top 50%
+    margin -200px 0 0 -200px 
+    line-height 400px
+    .wrapper
+      font-size 72px
+      line-height 96px
+    &:after
+      display none
+      transform rotate(-105deg)
+      transform-origin 10px -198px
+      
+article.cloud.images
+  background-image url(../images/picture.jpg) 
+  background-size cover
+  background-position 50%
+  h1
+    width 400px 
+    height 400px
+    left 50%
+    top 50%
+    margin -200px 0 0 -200px 
+    line-height 400px
+    .wrapper
+      font-size 42px
+      line-height 96px
+    &:after
+      display none
+      transform rotate(-105deg)
+      transform-origin 10px -198px
+      
 article.cloud.ydncss-5
   background-image url(../images/title.png) 
   background-size 1600px auto
@@ -736,7 +774,7 @@ article.screen.screen--support-support
       z-index 100
       
 @css {
-  @supports ( position: sticky ) {
+  @supports ( -moz-stack-sizing: stretch-to-fit ) {
     article.example.example--support .half.sticky {
       background: green;
     }
