@@ -1759,7 +1759,6 @@ section#slides article.example.example--news ul.news .item {
   -webkit-scroll-snap-coordinate: 0 0;
       -ms-scroll-snap-coordinate: 0 0;
           scroll-snap-coordinate: 0 0;
-  scroll-snap-stop: always;
 }
 section#slides article.example.example--news ul.news .item .illustration {
   vertical-align: top;
